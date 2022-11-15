@@ -21,15 +21,16 @@ func fibonacci(int n: Int) -> Int {
         return prevsum
     }
 }
-
-//    if n > 2 {
-//        let prevsum = fibonacci(int: n-2) + fibonacci(int: n-1)
-//        print("Non-terminal case, returning \(prevsum).")
-//        return prevsum
-//    } else {
-//        print("Terminal case, returning 1.")
-//        return 1
-//    }
-//}
+/*
+    if n > 2 {
+        let prevsum = fibonacci(int: n-2) + fibonacci(int: n-1)
+        print("Non-terminal case, returning \(prevsum).")
+        return prevsum
+    } else {
+        print("Terminal case, returning 1.")
+        return 1
+    }
+}
+*/
 
 print("The final result is: \(fibonacci(int: n)).")

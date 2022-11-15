@@ -29,8 +29,14 @@ while x < n {
  */
 
 func factorial(int n: Int) -> Int {
-    print("Calculatic fibonacci(/(n))...")
-    if n <= 0 {
+    print("Calculating factorial(\(n))...")
+    if n <= 1 {
         print("Terminal case, returning 1.")
-
-print("The final result is: \(a).")
+        return 1
+    } else {
+        let prevsum = n * factorial(int: n-1)
+        print("Non-terminal case, returning \(prevsum).")
+        return prevsum
+    }
+}
+print("The final result is: \(factorial(int: n)).")

@@ -11,7 +11,7 @@ let n = 7
 
 var a = 1
 var x = n
-if x < 0 {
+if x < 1 {
     print("Calculating factorial(\(x))...")
     x = 0
 }
@@ -26,4 +26,4 @@ while x < n {
     a *= x
     print("Non-terminal case, returning \(a).")
 }
-print("ta)
+print("The final result is: \(a).")
